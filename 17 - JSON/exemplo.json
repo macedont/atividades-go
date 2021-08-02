@@ -1,0 +1,7 @@
+{
+  "nome": "macedo",
+  "idade": 17,
+  "cursos": {
+    "descricao": "golang"
+  }
+}

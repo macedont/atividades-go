@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+
+    <style>
+        marquee{
+            color: blue
+        }
+
+        h1 {
+            color: #c9c9c9;
+            font-size: 90px;
+            font-family: Arial, Helv, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Página Inicial</h1>
+
+    <marquee>
+        <h4>Seja Bem Vindo, {{ .Nome }}</h4>
+    </marquee>
+
+    <button id="butaum">
+        Clique em mim
+    </button>
+
+
+</body>
+<script type="text/javascript">
+    window.onload = function (){
+        let botao = document.getElementById("butaum");
+
+        botao.onclick = function (){
+            alert("você clicou no butaum")
+        }
+    }
+</script>
+</html>
