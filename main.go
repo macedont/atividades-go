@@ -1,16 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"log"
+	"net/http"
+)
 
-type vasco int
-
-var x vasco
-
-func algo(x interface{}) {
-	fmt.Printf("%v %T", x, x)
+func index(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("oi"))
 }
 
 func main() {
-	x = 12
-	algo(x)
+
+	http.HandleFunc("/index", index)
+
+	log.Fatalln(http.ListenAndServe(":5000", nil))
 }

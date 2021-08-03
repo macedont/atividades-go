@@ -8,7 +8,7 @@ type usuario struct {
 }
 
 func (u usuario) salvar() {
-	fmt.Printf("Salvando o %s no banco de dados\n", u.nome)
+	fmt.Printf("Salvando o %s no 20 - Banco de dados de dados\n", u.nome)
 }
 
 func (u usuario) maiorIdade() bool {
